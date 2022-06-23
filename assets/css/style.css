@@ -1,0 +1,98 @@
+/**********************************************
+1.Universal Styles
+
+***********************************/
+
+*{
+margin: 0px;
+padding: 0px;
+font-family: 'Roboto', sans-serif;
+list-style: none;
+}
+
+html, body{
+    height: 100%;
+}
+html{
+
+    /* 1 rem = 16px
+    10/16 = 0.625*100=62.5%*/
+    font-size: 62.5%;
+}
+
+/**********************
+    MAIN SECTION
+*************************/
+
+.main-page{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+    grid-template-rows: 1fr min-content;
+
+}
+
+
+/**************************
+
+LEFT SECTION
+
+****************************/
+
+.left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #1da1f5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.left-content div{
+    position:relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    display: flex;
+    align-items: center;
+    margin: 4rem;
+    color: #fff
+}
+
+.left-content i{
+    font-size: 3rem;
+    margin-right: 2.4rem;
+}
+
+.left-content-heading{
+    font-size: 2rem;
+}
+
+
+/***********************************************
+    RIGHT SECTION
+***********************************************/
+.right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #23395d;
+}
+
+.middle-content{
+    /********************************************
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    *******************************************/
+    position:relative;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+}
+
+
+
